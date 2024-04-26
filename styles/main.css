@@ -104,14 +104,14 @@ td img {
     }
 
     table{
-        background-color: #FFFFFF1A;
+        background-color: #2A2A2A;
         max-width: 100vw;
     }
 
     .tscroll table td:first-child {
         position: sticky;
         min-width: 200px;
-        background-color: #FFFFFF1A;
+        background-color: #2A2A2A;
         border-right: 1px solid rgba(255, 255, 255, 0.12);
     }
     tr td:nth-last-child(-n+4) {
