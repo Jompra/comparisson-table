@@ -1,0 +1,134 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #000000;
+    color: #fff;
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+.tscroll {
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    max-width: 1104px;
+    padding: 24px;
+    border-radius: 12px;
+    /* background: radial-gradient(circle, rgba(242, 104, 26, 0.2) 0%, rgba(242, 104, 26, 0) 100%); */
+    background-color: #FFFFFF1F;
+}
+
+.tscroll table td:first-child {
+    left: 0;
+}
+
+table {
+    font-size: 12px;
+    font-weight: 600;
+    width: 100%;
+}
+
+tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    padding: 0;
+}
+
+tr:hover {
+    background-color: rgba(255, 255, 255, 0.12);
+}
+
+.tableHead:hover {
+    background-color: inherit;
+}
+
+td {
+    height: inherit;
+    padding: 8px;
+}
+
+tr td:nth-last-child(-n+4) {
+    width: 133px;
+}
+
+tr td:first-child {
+    padding-bottom: 18px;
+}
+
+td img {
+    height: 14px;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+.tooltip {
+    position: fixed;
+    display: none;
+    background-color: grey;
+    font-size: 12px;
+    width: 200px;
+    padding: 12px;
+    border-radius: 8px;
+    z-index: 1;
+}
+
+.tooltip p {
+    margin-bottom: 12px;
+}
+
+.tooltip p:last-child {
+    margin-bottom: 0;
+}
+
+@media only screen and (max-width: 920px) {
+
+    .tscroll{
+        width: auto;
+        overflow-x: scroll;
+        
+    }
+    tr td:nth-last-child(-n+4) {
+        width:100px;
+    }
+
+    tr td {
+        justify-content: space-between;
+        align-items: center;
+    }
+        
+}
+
+@media only screen and (max-width: 750px) {
+
+    .tscroll{
+        background: none;
+        background-color: #FFFFFF1A;
+        overflow-x: scroll;
+        padding: 0;
+    }
+
+    table{
+        background-color: #FFFFFF1A;
+        max-width: 100vw;
+    }
+
+    .tscroll table td:first-child {
+        position: sticky;
+        min-width: 200px;
+        background-color: #FFFFFF1A;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+    }
+    tr td:nth-last-child(-n+4) {
+        min-width: 100px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .tscroll table td:first-child {
+        min-width: 50px;
+    }
+
+    table td:first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
+
