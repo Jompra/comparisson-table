@@ -10,6 +10,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.12);
     max-width: 1104px;
     padding: 24px;
+    padding-top: 8px;
     border-radius: 12px;
     /* background: radial-gradient(circle, rgba(242, 104, 26, 0.2) 0%, rgba(242, 104, 26, 0) 100%); */
     background-color: #FFFFFF1F;
@@ -61,7 +62,7 @@ tr td:nth-of-type(2){
 .tableHead td:nth-of-type(2){
     font-weight: bold;
     color: #FFFFFF; 
-    border-radius: 12px 12px 0 0;
+    border-radius: 4px 4px 0 0;
 }
 
 td img {
