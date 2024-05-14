@@ -22,7 +22,7 @@ body {
 
 table {
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
     width: 100%;
 }
 
@@ -56,8 +56,9 @@ tr td:nth-of-type(2){
     background-color: rgba(255, 255, 255, 0.12);
 }
 .tableHead {
-    font-weight:500;
-    color: #D7D7DB
+    font-weight:600;
+    color: #D7D7DB;
+    font-size: 13px;
 }
 .tableHead td:nth-of-type(2){
     font-weight: bold;

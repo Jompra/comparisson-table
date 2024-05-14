@@ -36,8 +36,10 @@ function init() {
     function rowHoverOut(event) {
         const cells = event.target.children
         // event.target.style.backgroundColor = 'rgba(0,0,0,0)'
-        for (let cell of cells) {
-            cell.style.color = '#ffffff'
+        if (!event.target.classList.contains('tableHead')){
+            for (let cell of cells) {
+                cell.style.color = '#ffffff'
+            }
         }
     }
     function removeTooltips() {
