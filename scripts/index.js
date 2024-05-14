@@ -13,13 +13,13 @@ function init() {
 
     function highlightWords(cells) {
         for (let cell of cells) {
-            if (greenWords.includes(cell.innerHTML)) {
+            if (greenWords.includes(cell.innerText)) {
                 cell.style.color = '#4BBD15'
             }
-            else if (yellowWords.includes(cell.innerHTML)) {
+            else if (yellowWords.includes(cell.innerText)) {
                 cell.style.color = '#E4BC2B'
             }
-            else if (redWords.includes(cell.innerHTML)) {
+            else if (redWords.includes(cell.innerText)) {
                 cell.style.color = '#F2681A'
             }
         }

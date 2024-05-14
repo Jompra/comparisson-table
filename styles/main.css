@@ -9,8 +9,7 @@ body {
 .tscroll {
     border: 1px solid rgba(255, 255, 255, 0.12);
     max-width: 1104px;
-    padding: 24px;
-    padding-top: 8px;
+    padding: 8px 24px;
     border-radius: 12px;
     /* background: radial-gradient(circle, rgba(242, 104, 26, 0.2) 0%, rgba(242, 104, 26, 0) 100%); */
     background-color: #FFFFFF1F;
@@ -31,6 +30,14 @@ tr {
     padding: 0;
 }
 
+tr:last-of-type {
+    border-bottom: none;
+}
+
+tr:last-of-type td:nth-of-type(2){
+    border-radius: 0 0 4px 4px;
+}
+
 tr:hover {
     background-color: rgba(255, 255, 255, 0.12);
 }
@@ -41,15 +48,16 @@ tr:hover {
 
 td {
     height: inherit;
-    padding: 8px;
+    padding: 12px;
+    vertical-align: middle;
+}
+
+td p img{
+    position: absolute;
 }
 
 tr td:nth-last-child(-n+4) {
     width: 133px;
-}
-
-tr td:first-child {
-    padding-bottom: 18px;
 }
 
 tr td:nth-of-type(2){
