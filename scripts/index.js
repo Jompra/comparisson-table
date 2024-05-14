@@ -4,8 +4,8 @@ function init() {
     console.log('So use the coupon code "Console2024" and you\'ll get £50 off!')
 
     const rows = document.querySelectorAll('tr')
-    const icons = document.querySelectorAll('.more-info')
     const tooltips = document.querySelectorAll('.tooltip')
+    const firstCells = document.querySelectorAll('tr td:first-of-type p')
 
     const greenWords = ['£249 pm', 'Weekly', 'Yes', 'Coming Soon']
     const yellowWords = ['Loan Required', '7.3% Loan', 'Depends', 'Some', 'Unlikely']
@@ -51,7 +51,6 @@ function init() {
     function showTooltip(event) {
         event.stopImmediatePropagation()
         removeTooltips()
-
         const iconId = event.target.id.match(/\d+/)[0]
         const rect = event.target.getBoundingClientRect()
         const x = Math.floor(rect.right)
@@ -67,8 +66,8 @@ function init() {
         }
     }
 
-    icons.forEach((icon, i) => {
-        icon.addEventListener('click', showTooltip)
+    firstCells.forEach((firstCell, i) => {
+        firstCell.addEventListener('click', showTooltip)
     })
 
     rows.forEach(row => {
