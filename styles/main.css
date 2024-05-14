@@ -51,6 +51,19 @@ tr td:first-child {
     padding-bottom: 18px;
 }
 
+tr td:nth-of-type(2){
+    background-color: rgba(255, 255, 255, 0.12);
+}
+.tableHead {
+    font-weight:500;
+    color: #D7D7DB
+}
+.tableHead td:nth-of-type(2){
+    font-weight: bold;
+    color: #FFFFFF; 
+    border-radius: 12px 12px 0 0;
+}
+
 td img {
     height: 14px;
     margin-left: 8px;
